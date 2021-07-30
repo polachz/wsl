@@ -8,9 +8,10 @@ You can use this repo as inspiration how things can be done.
 
 ## Fedora
 
-How to create image from docker-hub. Add **-Force** parameter to overwrite existing image if necessary:
+How to create image from docker-hub: 
 
 ```PowerShell
 PowerShell.exe -ExecutionPolicy Bypass -File .\get-fedora-image.ps1 
 ```
+Add **-Force** parameter to overwrite existing image if necessary.
 
