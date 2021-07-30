@@ -1,0 +1,7 @@
+#/bin/bash
+
+yadm clone https://github.com/polachz/dotdot.git --bootstrap
+
+git config --global submodule.recurse true
+
+
