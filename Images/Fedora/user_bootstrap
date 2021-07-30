@@ -1,6 +1,12 @@
 #/bin/bash
 
+#necessary for correct vim config installation
+
+python3 -m pip install requests
+
 yadm clone https://github.com/polachz/dotdot.git --bootstrap
+
+python3 ~/.vim_runtime/update_plugins.py
 
 git config --global submodule.recurse true
 

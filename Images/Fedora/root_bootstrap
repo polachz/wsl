@@ -2,12 +2,26 @@
 
 echo 'LANG="en_US.UTF-8"' > /etc/locale.conf
 
-dnf -y install passwd git vim dnf-plugins-core socat wget iproute cracklib-dicts glibc-langpack-en findutils iputils
+dnf -y install passwd \
+git \
+vim \
+dnf-plugins-core \
+socat \
+wget \
+iproute \
+cracklib-dicts \
+glibc-langpack-en \
+findutils \
+iputils \
+python3-pip 
 
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_32/home:TheLocehiliosan:yadm.repo
+dnf config-manager --add-repo https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_33/home:TheLocehiliosan:yadm.repo
 
 dnf -y install yadm
 
 setcap 'cap_net_admin,cap_net_raw+ep' /usr/bin/ping
+
+wget https://raw.githubusercontent.com/polachz/dotdot/master/.myconfig/bash/colours.sh -P /etc/profile.d
+
 
 
