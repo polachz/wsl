@@ -1,4 +1,5 @@
-*.gz
+**
+*.vhdx
 *.tar
 *.tgz
 

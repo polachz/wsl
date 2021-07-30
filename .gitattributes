@@ -1,0 +1,2 @@
+get-fedora-image.ps1 text eol=crlf
+deploy-fedora-image.ps1 text eol=crlf
