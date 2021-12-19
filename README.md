@@ -8,10 +8,13 @@ You can use this repo as inspiration how things can be done.
 
 ## Fedora
 
-How to create image from docker-hub: 
-
+#### How to create image from docker-hub: 
 ```PowerShell
 PowerShell.exe -ExecutionPolicy Bypass -File .\get-fedora-image.ps1 
 ```
 Add **-Force** parameter to overwrite existing image if necessary.
 
+#### Deployment of the fresh instance from the previously downloaded image:
+```PowerShell
+PowerShell.exe -ExecutionPolicy Bypass -File .\deploy-fedora-image.ps1 -InstanceName Fedora-35 -UserName liuser
+```
