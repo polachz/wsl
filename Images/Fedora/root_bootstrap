@@ -13,6 +13,7 @@ cracklib-dicts \
 glibc-langpack-en \
 findutils \
 iputils \
+genisoimage \
 python3-pip 
 
 dnf config-manager --add-repo https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_34/home:TheLocehiliosan:yadm.repo
