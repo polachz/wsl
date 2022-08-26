@@ -3,6 +3,7 @@
 echo 'LANG="en_US.UTF-8"' > /etc/locale.conf
 
 dnf -y install passwd \
+hostname \
 git \
 vim \
 dnf-plugins-core \
