@@ -1,0 +1,1 @@
+schtasks /create /tn "Make WSL Net Static" /xml ".\make_wsl_static_task.xml"

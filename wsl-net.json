@@ -1,0 +1,21 @@
+{
+    "Config": {
+        "subnet": "172.18.18.1/24",
+        "rules":  [
+            {
+                    "name":           "WSl-Ping",
+					"Direction":      "In",
+                    "protocol":       "ICMPv4",
+                    "icmptype":       "8:0",
+                    "remoteaddress":  "Any"
+                },
+                {
+                    "name":           "WSL-WinRM-HTTPS",
+					"Direction":      "In",
+                    "protocol":       "TCP",
+                    "localport":      "5986",
+                    "remoteaddress":  "Any"
+                }
+         ]
+    }
+}
