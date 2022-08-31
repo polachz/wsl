@@ -4,6 +4,7 @@ echo 'LANG="en_US.UTF-8"' > /etc/locale.conf
 
 dnf -y install passwd \
 hostname \
+procps \
 git \
 vim \
 dnf-plugins-core \
@@ -26,6 +27,4 @@ curl -fLo /usr/local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master
 setcap 'cap_net_admin,cap_net_raw+ep' /usr/bin/ping
 
 wget https://raw.githubusercontent.com/polachz/dotdot/master/.myconfig/bash/colours.sh -P /etc/profile.d
-
-
 
