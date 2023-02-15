@@ -1,2 +1,4 @@
 root_bootstrap text eol=lf
 user_bootstrap text eol=lf
+resolv.conf text eol=lf
+root_ca.crt text eol=lf
