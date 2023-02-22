@@ -16,7 +16,10 @@ glibc-langpack-en \
 findutils \
 iputils \
 genisoimage \
-python3-pip 
+python3-pip \
+bzip2 \
+xz
+
 
 #install YADM
 curl -fLo /usr/local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x /usr/local/bin/yadm
