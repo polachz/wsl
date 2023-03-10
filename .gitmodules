@@ -1,4 +1,4 @@
 [submodule "scripts"]
 	path = scripts
-	url = git@github.com:polachz-nxp/wsl-scripts.git
+	url = git@github.com:polachz/wsl-scripts.git
 	branch = master
