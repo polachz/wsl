@@ -32,4 +32,4 @@ Start:
 ```shell
 make_wsl_net_static.bat
 ```
-Details can be found in the mian scripts repo [Static WSL Subnet Script](https://github.com/polachz/wsl-scripts#static-wsl-subnet-script)
+Details can be found in the main scripts repo [Static WSL Subnet Script](https://github.com/polachz/wsl-scripts#static-wsl-subnet-script)
