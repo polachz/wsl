@@ -2,7 +2,10 @@
 
 echo 'LANG="en_US.UTF-8"' > /etc/locale.conf
 
-dnf -y install passwd \
+dnf -y install \
+util-linux \
+passwd \
+cracklib-dicts \
 hostname \
 procps \
 git \
@@ -11,7 +14,6 @@ dnf-plugins-core \
 socat \
 wget \
 iproute \
-cracklib-dicts \
 glibc-langpack-en \
 findutils \
 iputils \
