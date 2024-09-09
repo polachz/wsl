@@ -6,5 +6,9 @@ param (
     [switch]$InstallCA
 )
 
+$wsl_image_name = 'wsl-fedora'
+
+$wsl_image_path = "$PSScriptRoot\Images\Fedora\$wsl_image_name.tgz"
+
 & "$PSScriptRoot\scripts\deploy-wsl2-image.ps1" -OverrideResolvConf:$OverrideResolvConf -InstallCA:$InstallCA `
-        -InstanceName $InstanceName -UserName $UserName -Image $PSScriptRoot\Images\Fedora\fedora.tgz -DisksDir $PSScriptRoot\Disks 
+        -InstanceName $InstanceName -UserName $UserName -Image $wsl_image_path -DisksDir $PSScriptRoot\Disks 
