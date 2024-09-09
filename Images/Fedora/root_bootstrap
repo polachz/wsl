@@ -23,13 +23,7 @@ bzip2 \
 xz
 
 
-#install YADM
-curl -fLo /usr/local/bin/yadm https://github.com/TheLocehiliosan/yadm/raw/master/yadm && chmod a+x /usr/local/bin/yadm
-#dnf config-manager --add-repo https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_34/home:TheLocehiliosan:yadm.repo
-
-#dnf -y install yadm
-
 setcap 'cap_net_admin,cap_net_raw+ep' /usr/bin/ping
 
-wget https://raw.githubusercontent.com/polachz/dotdot/master/.myconfig/bash/colours.sh -P /etc/profile.d
+wget https://raw.githubusercontent.com/polachz/dotfiles/main/dot_bashrc.d/colours.sh -P /etc/profile.d
 
