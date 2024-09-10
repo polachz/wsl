@@ -4,6 +4,7 @@ echo 'LANG="en_US.UTF-8"' > /etc/locale.conf
 
 dnf -y install \
 util-linux \
+systemd \
 passwd \
 cracklib-dicts \
 hostname \
