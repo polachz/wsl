@@ -13,22 +13,25 @@ Main informations and script parameters are available [here](https://github.com/
 
 ### Personal Docker Hub image
 
-Due more optimized Fedora Official Images, deployment script doesn't work correctly now.  Missing the _mount_ command in the [Fedora Official Image](https://hub.docker.com/_/fedora) is the main reason of this.
+Due more optimized Fedora Official Images, deployment script doesn't work correctly with the Fedora Officila Image for now.  Missing the _mount_ command in the [Fedora Official Image](https://hub.docker.com/_/fedora) is the main reason of this.
 
-I have tried to figure out some workarround, but the best solution is to build own Fedora Docker Image, based on this official one. I have created GitHub Repository [wsl-fedora](https://github.com/polachz/wsl-fedora) for this task. The repo has configured Github Actions to build the image and push it to the DockerHub. 
+I have tried to figure out a workarround, but the best solution is to build own Fedora Docker Image, based on this official one. I have created GitHub Repository [wsl-fedora](https://github.com/polachz/wsl-fedora) for this task. The repository has configured Github Actions script to build the modified image and push it to the DockerHub.
 
-You can find these images on my DockerHub repository [polachz/wsl-fedora](https://hub.docker.com/r/polachz/wsl-fedora).
+You can find build results of the GitGub repository Dockerfile on my DockerHub repository [polachz/wsl-fedora](https://hub.docker.com/r/polachz/wsl-fedora).
 
-Feel free to use the image for your fedora deployments directly if you can. If you are afraid about the image securitry, you can clone and modify my GitHub repository [wsl-fedora](https://github.com/polachz/wsl-fedora) and build everything yourself.
+Feel free to use the image for your Fedora deployments directly if you can. If you are afraid about the image security then you can clone and modify my GitHub repository [wsl-fedora](https://github.com/polachz/wsl-fedora) and build everything yourself. I think that this process is straightforward and you can find many how-to posts about this over the Internet.
 
+------------------------------
 
-#### How to create image from docker-hub: 
+### How-To USe Scripts from The WSL Repository:
+
+#### Download Fedora deployment image from my personal docker-hub: 
 ```PowerShell
 PowerShell.exe -ExecutionPolicy Bypass -File .\get-fedora-image.ps1 
 ```
 Add **-Force** parameter to overwrite existing image if necessary.
 
-#### Deployment of the fresh instance from the previously downloaded image:
+#### Deployment of the fresh Fedora WSL Instance from the previously downloaded image:
 ```PowerShell
 PowerShell.exe -ExecutionPolicy Bypass -File .\deploy-fedora-image.ps1 -InstanceName Fedora-37 -UserName liuser
 ```
