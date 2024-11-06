@@ -13,7 +13,7 @@ Main informations and script parameters are available [here](https://github.com/
 
 ### Personal Docker Hub image
 
-Due more optimized Fedora Official Images, deployment script doesn't work correctly with the Fedora Officila Image for now.  Missing the _mount_ command in the [Fedora Official Image](https://hub.docker.com/_/fedora) is the main reason of this.
+Due more optimized Fedora Official Images, deployment script doesn't work correctly with the Fedora Official Image for now.  Missing the _mount_ command in the [Fedora Official Image](https://hub.docker.com/_/fedora) is the main reason of this.
 
 I have tried to figure out a workarround, but the best solution is to build own Fedora Docker Image, based on this official one. I have created GitHub Repository [wsl-fedora](https://github.com/polachz/wsl-fedora) for this task. The repository has configured Github Actions script to build the modified image and push it to the DockerHub.
 
@@ -39,6 +39,11 @@ PowerShell.exe -ExecutionPolicy Bypass -File .\deploy-fedora-image.ps1 -Instance
 #### Deployment with resolv conf override and internal CA (ZScaler)
 ```PowerShell
 PowerShell.exe -ExecutionPolicy Bypass -File .\deploy-fedora-image.ps1 -InstanceName Fedora-37 -UserName liuser  -OverrideResolvConf -InstallCA
+```
+
+#### Remove Instance from WSl (to allow re-deployment)
+```PowerShell
+wsl -- unregister <distro name>
 ```
 
 ## Static WSL network

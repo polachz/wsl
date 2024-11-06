@@ -1,3 +1,4 @@
+#!/bin/sh
 
 # Fix Nvidia problem, if exist (see info below)
 # ldconfig: /usr/lib/wsl/lib/libcuda.so.1 is not a symbolic link
